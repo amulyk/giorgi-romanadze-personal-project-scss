@@ -1,5 +1,220 @@
-.header {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+
+    margin-top:20px;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+header {
     width: 100%;
-    height: 200px;
-    background: red;
+    height: 422px;
+    background-position: center;
+    background-image: url('../images/header/background.jpg');
+    background-size: 100% 100%;
+    margin-bottom: 63px;
+
+}
+
+.wrapper {
+    width:1000px;
+    margin:0 auto;
+}
+
+.sidebar {
+    background-color: #ed1c249e;
+    width:350px;
+    height:422px;
+}
+
+.post {
+    padding: 30px 30px 0px 30px;
+    margin-bottom: 58px;
+}
+.logo {
+    margin-bottom:47px;
+
+    &::before {
+        content: 'E';
+        font-size: 32px;
+        font-weight: 900;
+        color: white;
+        text-transform: uppercase;
+        padding: 2px 11px;
+        border: 1px solid white;
+        margin-left: 5px;
+    }
+
+    &::after {
+        content: 'Exhibition';
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: white;
+        margin-left: 8px;
+        letter-spacing: -0.7px;
+        position: absolute;
+    }
+}
+
+.post { 
+    span:nth-of-type(1) {
+        background-color: black;
+        font-size: 10px;
+        padding: 4px 9px;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        margin-left: 6px;
+    }
+    h1 {
+        margin-bottom: 18px;
+        margin-top: 5px;
+        margin-left: 8.3px;
+        letter-spacing: -0.3px;
+
+        &::before {
+            content: "John Doe:";
+            color:white;
+            font-size:22px;
+            
+            line-height: 26px;
+        }
+        &::after {
+            text-transform: uppercase;
+            content: "Shadows";
+            display: block;
+            color: white;
+            font-size: 25px;
+            line-height: 26px;
+            letter-spacing: -0.1px;
+            margin-top: -3px;
+            
+        }
+    }
+
+
+    p {
+        color: #FFFFFF;
+        border-top: 1px solid #F2656A;
+        border-bottom: 1px solid #F2656A;
+        padding: 15px 0px;
+        letter-spacing: -0.9px;
+        margin-left: 7px;
+        margin-bottom: 24px;
+    }
+
+}
+
+.icons  {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        padding: 12px 9.9px;
+        
+    }
+    
+
+}
+
+.arrow {
+    color:white; 
+    font-size:18px;
+    text-transform: uppercase;
+    margin-left: 8px;
+
+    &::before {
+        content: url('../images/header/arrow.png');
+        width:21px;
+        height:21px;
+        float:left;
+        margin-left: 6px;
+        margin-top: 0.4px;
+    }
+}
+
+.menu {
+    background-color: black;
+    padding: 14px 20px;
+    width: 63px;
+}
+
+.cleaner {
+    clear:both;
+}
+
+.sidebar, .menu{
+    float:left;
+}
+
+// .overview {
+//     background-color: #DBDBDB;
+//     height: 350px;
+
+//     .switcher {
+//         // float: right; 
+//         background: white;
+//         height: 50px;
+//         /* width: 652px; */
+//         display: flex;
+//         width: max-content;
+
+//         a {
+//             color: red;
+//             font-size: 53px;
+//             display: block;
+//             width: 30px;
+//         }
+//     }
+// }
+
+
+
+.header-bar {
+    width: 100%;
+    height: 64px;
+    overflow: hidden;
+    background-color: #DBDBDB;
+
+    div {
+        z-index: 1;
+        align-items: center;
+        display: flex;
+
+        img {
+            margin-right: -0.5px;
+            padding: 20px 21px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        width: 1002px;
+        height: 65px;
+        margin: 0 auto;
+
+        &::after {
+
+            content: '';
+            position: absolute;
+            left: 351.83px;
+            width: 200%;
+            height: 65px;
+            background-color: #111111;
+        }
+    }
 }
