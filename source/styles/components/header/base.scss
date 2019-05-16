@@ -121,7 +121,10 @@ header {
     justify-content: flex-end;
 
     a {
-        padding: 12px 9.9px;
+        padding: 9px 11px;
+        margin-top: 18px;
+        border-top: 1px solid $color-10;
+        border-left: 1px solid $color-10;
         
     }
     

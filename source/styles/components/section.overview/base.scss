@@ -1,8 +1,42 @@
-$color-1: #898989;
 
 .background-and-image img,.background-and-image {
     width:350px;
     height:522px;
     background:$color-1;
-    float:left;
+    // float:left; 
+}
+
+.wrapper.overview-grid {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-gap: 50px; 
+
+    .post-description {
+        padding-top: 39px;
+
+        h1 {
+            font-size:29px;
+            letter-spacing: 0.3px;
+            padding-bottom: 45px;
+        }
+
+        div {
+            display: grid;
+            grid-gap: 22px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    // div {
+    //     display:grid;
+    //     // grid-template-columns: repeat(2, 0.395fr);
+    // }
+}
+
+p.overview-header {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    line-height: 30px;
+    margin-bottom:5px;
+    text-decoration:  #DBDBDB underline;
 }
