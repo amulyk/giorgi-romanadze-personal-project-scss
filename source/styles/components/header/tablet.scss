@@ -1,3 +1,21 @@
-.header {
-    background: green;
+.wrapper {
+    width:100%;
+}
+
+.header-bar{
+
+    .container {
+        width:1024px;
+        padding: 0px 304px;
+        // overflow:hidden;
+    }
+
+    .container::after {
+        left: 31px;
+    }
+}
+
+section.sidebar {
+    margin-left: 32px;
+    width: 343px;
 }

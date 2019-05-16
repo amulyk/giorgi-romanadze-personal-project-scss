@@ -1,2 +1,9 @@
 // Comment
 
+.wrapper.overview-grid {
+    grid-template-columns: 1fr !important;
+    
+    .background-and-image {
+        display: none;
+    }
+}

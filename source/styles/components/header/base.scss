@@ -32,17 +32,25 @@ header {
 }
 
 .sidebar {
-    background-color: #ed1c249e;
+    background-color: #ff000ad6;
     width:350px;
     height:422px;
 }
 
 .post {
     padding: 30px 30px 0px 30px;
-    margin-bottom: 58px;
+    margin-bottom: 37px;
 }
 .logo {
-    margin-bottom:47px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 57px;
+    letter-spacing: -0.7px;
+    display: flex;
+
 
     &::before {
         content: 'E';
@@ -50,21 +58,13 @@ header {
         font-weight: 900;
         color: white;
         text-transform: uppercase;
-        padding: 2px 11px;
+        padding: 5px 11px;
         border: 1px solid white;
-        margin-left: 5px;
-    }
-
-    &::after {
-        content: 'Exhibition';
-        font-size: 18px;
-        font-weight: 900;
-        text-transform: uppercase;
-        color: white;
-        margin-left: 8px;
-        letter-spacing: -0.7px;
+        margin-left: -52px;
+        margin-top: -3px;
         position: absolute;
     }
+
 }
 
 .post { 
@@ -78,10 +78,11 @@ header {
         margin-left: 6px;
     }
     h1 {
-        margin-bottom: 18px;
-        margin-top: 5px;
+        margin-bottom: 14px;
+        margin-top: 9px;
         margin-left: 8.3px;
-        letter-spacing: -0.3px;
+        letter-spacing: -0.7px;
+        font-weight: 700;
 
         &::before {
             content: "John Doe:";
@@ -108,10 +109,12 @@ header {
         color: #FFFFFF;
         border-top: 1px solid #F2656A;
         border-bottom: 1px solid #F2656A;
-        padding: 15px 0px;
-        letter-spacing: -0.9px;
-        margin-left: 7px;
-        margin-bottom: 24px;
+        padding: 18px 0px 21px 5px;
+        letter-spacing: 0px;
+        line-height: 19.4px;
+        margin-bottom: 20px;
+        font-family: 'Open Sans';
+        font-weight: 300;
     }
 
 }
@@ -121,7 +124,7 @@ header {
     justify-content: flex-end;
 
     a {
-        padding: 9px 11px;
+        padding: 13px 12.1px 6px 11px;
         margin-top: 18px;
         border-top: 1px solid $color-10;
         border-left: 1px solid $color-10;
@@ -132,18 +135,19 @@ header {
 }
 
 .arrow {
-    color:white; 
-    font-size:18px;
+    color: white;
+    font-size: 18px;
     text-transform: uppercase;
     margin-left: 8px;
 
+
     &::before {
-        content: url('../images/header/arrow.png');
-        width:21px;
-        height:21px;
-        float:left;
-        margin-left: 6px;
-        margin-top: 0.4px;
+        content: url(../images/header/arrow.png);
+        width: 21px;
+        height: 21px;
+        float: left;
+        margin-left: 5px;
+        margin-top: -2.6px;
     }
 }
 
@@ -198,7 +202,11 @@ header {
         img {
             margin-right: -0.5px;
             padding: 20px 21px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+            &:nth-of-type(2) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+            }
         }
     }
 

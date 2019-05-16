@@ -1,1 +1,21 @@
-// Comment
+
+.wrapper.overview-grid {
+    grid-template-columns: 1fr !important;
+    
+    .background-and-image {
+        display: none;
+    }
+}
+
+.wrapper.overview-grid .post-description {
+    padding-top: 41px;
+    padding: 41px 81px;
+}
+
+
+
+.post-description {
+    .large-description {
+        width: 100% !important;
+    }
+}
