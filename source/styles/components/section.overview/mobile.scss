@@ -1,12 +1,56 @@
-// Comment
+.overview {
+    height: 599px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
 
-
-
-.overview{
     .container {
-        width:100%;
+        width: 270px;
+
         .background-image {
-            display:none;
+            display: none;
+        }
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top: 38px;
+            padding-left: 0;
+
+            &::before {
+                display: none;
+            }
+
+            h1 {
+                margin-bottom: 24px;
+                font-size: 24px;
+                letter-spacing: -.8px;
+            }
+
+            > p {
+                margin-bottom: 23px;
+
+                &:first-of-type {
+                    margin-bottom: 24px;
+                    padding-right: 2px;
+                    padding-left: 2px;
+                    font-size: 18px;
+                    letter-spacing: -.1px;
+                    word-spacing: -.4px;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                    width: initial;
+                }
+            }
+            div p:last-child {
+                padding-right: 12px;
+                line-height: 18px;
+                margin-bottom: -4px;
+            }
         }
     }
 }
+
