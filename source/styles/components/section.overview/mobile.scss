@@ -1,9 +1,12 @@
 // Comment
 
-.wrapper.overview-grid {
-    grid-template-columns: 1fr !important;
-    
-    .background-and-image {
-        display: none;
+
+
+.overview{
+    .container {
+        width:100%;
+        .background-image {
+            display:none;
+        }
     }
 }

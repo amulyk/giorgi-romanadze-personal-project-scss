@@ -1,3 +1,18 @@
 .wrapper {
-    width: 80% !important;
+    width: 100%;
+    
+    .sidebar {
+        background-color: #ff000ad6;
+        width: 272px;
+        margin-left: 8px;
+    }
+}
+
+.menu {
+    background-color: black;
+    padding: 14px 20px;
+    width: 63px;
+    position: absolute;
+    margin-left: 287px;
+    margin-top: 25px;
 }
