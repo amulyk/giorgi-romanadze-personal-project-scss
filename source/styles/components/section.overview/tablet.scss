@@ -36,13 +36,19 @@
             }
 
             p:last-child {
-                margin-top: 5px;
                 padding-right: 50px;
                 font-size: 14px;
                 font-weight: 300;
                 letter-spacing: .2px;
                 line-height: 20px;
                 word-spacing: -1.44px;
+            }
+
+            .multicolumn-paragraph {
+                width: 546px;
+                margin-bottom: 10px;
+                column-gap: 41px;
+                column-width: 200px;
             }
         }
     }
