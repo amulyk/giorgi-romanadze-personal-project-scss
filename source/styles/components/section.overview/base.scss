@@ -1,77 +1,3 @@
-
-// .background-and-image {
-//     // width:350px;
-//     // height:522px;
-//     background:$color-1;
-//     overflow: hidden;
-//     width: 350px;
-//     height: 522px;
-//     // float:left; 
-
-//     img {
-//         width: initial;
-//         height: initial;
-//     }
-// }
-
-// .wrapper.overview-grid {
-//     display: grid;
-//     grid-template-columns: 0fr 1fr;
-//     grid-gap: 50px; 
-//     font-weight: 300;
-//     font-family: 'Open Sans';
-
-//     .post-description {
-//         padding-top: 41px;
-
-//         h1 {
-//             font-size: 29px;
-//             letter-spacing: 0.8px;
-//             padding-bottom: 45px;
-//             font-weight: 700;
-//         }
-
-//         div {
-//             display: grid;
-//             grid-gap: 34px;
-//             font-size: 14px;
-//             grid-template-columns: 0.84fr 1fr;
-//             letter-spacing: 0.1px;
-//             line-height: 19.5px;
-//             word-spacing: -0.7px;
-//             margin-left: -2px;
-//             margin-bottom: 33px;
-//         }
-
-//         .large-description {
-//             word-spacing: -0.2px;
-//             font-size: 14px;
-//             letter-spacing: -0.01px;
-//             width: 90%;
-//             line-height: 20px;
-//         }
-//     }
-
-//     // div {
-//     //     display:grid;
-//     //     // grid-template-columns: repeat(2, 0.395fr);
-//     // }
-// }
-
-// .overview-header {
-//     font-size: 20px;
-//     font-family: 'Open Sans';
-//     line-height: 30px;
-//     letter-spacing: 0px;
-//     margin-bottom: 31px;
-//     text-decoration: #DBDBDB underline;
-
-// }
-
-
-
-
-
 .overview {
     display: flex;
     position: relative;
@@ -79,27 +5,26 @@
     width: 100%;
     height: 522px;
     overflow: hidden;
-    background-color: #DBDBDB;
+    background-color: $color-7;
 
     .container {
         display: flex;
         position: absolute;
         width: 1000px;
-        // height: 100%;
 
         .background-image {
+            display: flex;
+            position: relative;
             flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
             width: 350px;
             height: 522px;
-            background-color: #898989;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             overflow: hidden;
+            background-color: $color-1;
 
             img {
-                position: absolute;;
+                position: absolute;
             }
         }
 
@@ -109,9 +34,8 @@
             height: 421px;
             padding-top: 43px;
             padding-left: 48px;
-            color: #222222;
+            color: $color-9;
             font-family: 'Open Sans', sans-serif;
-            
 
             h1 {
                 margin-bottom: 43px;
@@ -129,22 +53,21 @@
 
                 &:first-of-type {
                     text-decoration: underline;
-                    text-decoration-color: #DBDBDB;
+                    text-decoration-color: $color-7;
                 }
 
                 &:last-child {
+                    margin-top: 7px;
                     padding-right: 65px;
                     font-size: 14px;
                     line-height: 20px;
-                    margin-top: 7px;
                 }
-
             }
 
             div {
                 display: flex;
 
-                p {
+                .multi-row {
                     margin-bottom: 30px;
                     padding-right: 34px;
                     font-size: 14px;
@@ -152,12 +75,12 @@
                     line-height: 20px;
 
                     &:first-child {
-                        // max-width: 49%;
                         margin-right: -2px;
                     }
 
                     &:last-child {
                         padding-right: 12px;
+                        column-count: 2;
                         line-height: 18px;
                     }
                 }
@@ -171,13 +94,8 @@
                 left: 0;
                 width: 200%;
                 height: 522px;
-                background-color: #ffffff;
+                background-color: $color-2;
             }
         }
     }
-}
-
-
-.multicolumn-paragraph p {
-    column-count:2;
 }

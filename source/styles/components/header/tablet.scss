@@ -1,21 +1,20 @@
 .wrapper {
-    width:100%;
+    width: 100%;
+
+    .sidebar {
+        width: 343px;
+        margin-left: 32px;
+    }
 }
 
-.header-bar{
+.header-bar {
 
     .container {
-        width:1024px;
-        padding: 0px 304px;
-        // overflow:hidden;
+        width: 1024px;
+        padding: 0 304px;
     }
 
     .container::after {
         left: 31px;
     }
-}
-
-section.sidebar {
-    margin-left: 32px;
-    width: 343px;
 }
